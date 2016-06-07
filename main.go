@@ -58,7 +58,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 				log.Println(err)
 			}
 		}
-		if content.Text == "thx" {
+		if text.Text == "thx" {
 			bot.SendText([]string{content.From},"u r welcome!")
 		}
 	}
